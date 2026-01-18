@@ -1,27 +1,46 @@
-# 🤖 AI Code Documentation Generator
+# AI Code Documentation Generator
 
 Automatically generate professional docstrings, class documentation, and README files for Python projects using Google's Gemini 2.5 Flash AI model.
 
 ## Features
 
-- Smart function and class documentation with type hints
-- Auto-insert docstrings directly into code files
-- Generate comprehensive README files
-- Clean Streamlit UI with download options
+- Smart function and class documentation with type hints and examples
+- Auto-insert docstrings directly into code files with proper formatting
+- Generate comprehensive README files for entire projects
+- Clean web interface with side-by-side code comparison
+- Download documented files instantly
 - Supports Google-style docstrings
 
 ## Installation
 
-Clone the repo, create virtual environment, and install dependencies. Add your Gemini API key to a .env file. Get free API key from Google AI Studio.
+Clone this repository and install dependencies:
+pip install google-genai python-dotenv streamlit
+
+
+Create a .env file in the project root and add your Gemini API key. Get a free API key from Google AI Studio.
 
 ## Usage
 
-Run streamlit app, upload Python file, click generate, and download documented version.
+Launch the Streamlit application, upload any Python file, click the generate button, and download your documented code with professional docstrings automatically inserted at the correct locations.
 
-## Tech Stack
+## Technical Stack
 
-Gemini 2.5 Flash | Streamlit | Python AST | Python 3.8+
+- AI Model: Google Gemini 2.5 Flash
+- Frontend: Streamlit
+- Parser: Python AST module
+- Python 3.8 or higher required
+
+## Project Structure
+
+- parser.py: Extracts functions and classes from Python files
+- generator.py: Generates docstrings using Gemini API
+- readme_generator.py: Creates project README files
+- app.py: Streamlit web interface
 
 ## License
 
-MIT - Free to use for any project
+MIT License. Free to use for personal and commercial projects.
+
+## Contributing
+
+Contributions welcome. Fork the repository and submit pull requests with improvements.
